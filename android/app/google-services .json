@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "198074786124",
+    "firebase_url": "https://mat-yako-241910.firebaseio.com",
+    "project_id": "mat-yako-241910",
+    "storage_bucket": "mat-yako-241910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198074786124:android:4a9e5bb7d0928ff9352fe9",
+        "android_client_info": {
+          "package_name": "com.example.m_fundi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198074786124-ul2edgva8mimpj26p5vre89g0uaebvof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.m_fundi",
+            "certificate_hash": "d1a8b314036e5c7ea8166add38cbf3e4b82061d4"
+          }
+        },
+        {
+          "client_id": "198074786124-p21gqld80m1c3knpmfo3sa8d0kp63dhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXkbQGB2dp5Eqi4jv5028hWSzptiirKU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198074786124-p21gqld80m1c3knpmfo3sa8d0kp63dhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
