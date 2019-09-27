@@ -7,8 +7,14 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery
+        .of(context)
+        .size
+        .width;
+    final _height = MediaQuery
+        .of(context)
+        .size
+        .height;
 
     // TODO: implement build
     return Scaffold(
@@ -52,24 +58,20 @@ class WelcomePage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) => CustomDialog(
-                                  title:
-                                      "Would you like to create a free account ?",
-                                  description:
-                                      "With an account, you'll be able to enjoy all available services",
-                                  primaryButtonText: "Create an Account",
-                                  primaryButtonRoute: "/signup",
-                                  secondaryButtonText: "Maybe later",
-                                  secondaryButtonRoute: "/home",
-                                )
-                        )
-                    );
+                    showDialog(context: context, builder:(BuildContext context) =>
+                        CustomDialog(
+                          title:
+                          "Would you like to create a free account?",
+                          description:
+                          "With an account, you'll be able to enjoy all available services",
+                          primaryButtonText: "Create an Account",
+                          primaryButtonRoute: "/signup",
+                          secondaryButtonText: "Maybe later",
+                          secondaryButtonRoute: "/home",
+                        ));
                   },
                 ),
-                SizedBox(height: _height * 0.1),
+                SizedBox(height: _height * 0.19),
                 FlatButton(
                   child: Text(
                     'Sign In',
@@ -78,7 +80,9 @@ class WelcomePage extends StatelessWidget {
                       decoration: TextDecoration.underline,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed('/signIn');
+                  },
                 )
               ],
             ),
@@ -88,3 +92,5 @@ class WelcomePage extends StatelessWidget {
     );
   }
 }
+
+
